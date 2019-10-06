@@ -1,0 +1,1 @@
+<img src="<?=base_url('')?>" width="30" height="20" data-toggle="modal" data-target="#view" onclick="productlink('FLProduct1')" data-id="GenarateProductList1">

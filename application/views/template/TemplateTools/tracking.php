@@ -1,0 +1,1 @@
+<a href="<?=base_url().$link.$id?>" data-toggle="modal" data-target="#bigbasic" class="btn blue btn-outline">Tracking</a>

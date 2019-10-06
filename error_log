@@ -1,0 +1,164 @@
+[26-Apr-2019 17:23:06 Asia/Kolkata] PHP Fatal error:  Class 'Company_Controller' not found in /home/imarahtech/public_html/deploy/application/controllers/backend/company/Dashboard.php on line 15
+[26-Apr-2019 17:24:54 Asia/Kolkata] PHP Fatal error:  Cannot declare class Api_Supervisor_Controller, because the name is already in use in /home/imarahtech/public_html/deploy/application/core/api/backend/Api_Supervisor_Controller.php on line 63
+[26-Apr-2019 17:25:09 Asia/Kolkata] PHP Fatal error:  Cannot declare class Api_Supervisor_Controller, because the name is already in use in /home/imarahtech/public_html/deploy/application/core/api/backend/Api_Supervisor_Controller.php on line 63
+[26-Apr-2019 17:25:11 Asia/Kolkata] PHP Fatal error:  Cannot declare class Api_Supervisor_Controller, because the name is already in use in /home/imarahtech/public_html/deploy/application/core/api/backend/Api_Supervisor_Controller.php on line 63
+[26-Apr-2019 21:35:52 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:35:54 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:35:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:35:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:35:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:35:56 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:36:13 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:37:02 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:37:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:37:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:37:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:37:07 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mssql_connect() in /home/imarahtech/public_html/deploy/check.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/imarahtech/public_html/deploy/check.php on line 7
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_query() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 17
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_query() /home/imarahtech/public_html/deploy/check.php:17
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_fetch() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 18
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_fetch() /home/imarahtech/public_html/deploy/check.php:18
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_get_field() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 22
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_get_field() /home/imarahtech/public_html/deploy/check.php:22
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 24
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:24
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_query() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 17
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_query() /home/imarahtech/public_html/deploy/check.php:17
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_fetch() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 18
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_fetch() /home/imarahtech/public_html/deploy/check.php:18
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_get_field() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 22
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_get_field() /home/imarahtech/public_html/deploy/check.php:22
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 24
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:38:49 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:24
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP Stack trace:
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[26-Apr-2019 21:39:17 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:23:58 Asia/Kolkata] PHP Fatal error:  Cannot use [] for reading in /home/imarahtech/public_html/deploy/application/controllers/backend/vendor/tax/Tax.php on line 23
+[27-Apr-2019 10:23:58 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:23:58 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/index.php:0
+[27-Apr-2019 10:23:58 Asia/Kolkata] PHP   2. require_once() /home/imarahtech/public_html/deploy/index.php:317
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:34:14 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:35:58 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:35:58 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:35:58 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:35:58 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:35:59 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:00 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Warning:  sqlsrv_close() expects parameter 1 to be resource, boolean given in /home/imarahtech/public_html/deploy/check.php on line 16
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP Stack trace:
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   1. {main}() /home/imarahtech/public_html/deploy/check.php:0
+[27-Apr-2019 10:36:01 Asia/Kolkata] PHP   2. sqlsrv_close() /home/imarahtech/public_html/deploy/check.php:16
+[09-May-2019 11:33:12 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:33:12 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:05 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:07 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:08 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:08 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:11 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[09-May-2019 11:37:11 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Vendorreport::__construct() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Vendorreport.php on line 18
+[11-May-2019 15:11:59 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Defaultcategory_Model::read_DefaultCategory() in /home/imarahtech/public_html/deploy/application/models/online/backend/admin/manage_data/Defaultcategory_Model.php on line 24
+[11-May-2019 15:12:04 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Defaultcategory_Model::read_DefaultCategory() in /home/imarahtech/public_html/deploy/application/models/online/backend/admin/manage_data/Defaultcategory_Model.php on line 24
+[11-May-2019 15:13:41 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Defaultcategory_Model::read_DefaultCategory() in /home/imarahtech/public_html/deploy/application/models/online/backend/admin/manage_data/Defaultcategory_Model.php on line 24
+[13-May-2019 14:39:31 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Dealerreport::vendortable() in /home/imarahtech/public_html/deploy/application/controllers/backend/admin/report/Dealerreport.php on line 165
+[22-Jul-2019 16:05:41 Asia/Kolkata] PHP Fatal error:  Call to a member function set_rules() on null in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Complaint.php on line 24
+[22-Jul-2019 16:06:36 Asia/Kolkata] PHP Fatal error:  Call to a member function set_rules() on null in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Complaint.php on line 24
+[22-Jul-2019 16:07:20 Asia/Kolkata] PHP Fatal error:  Call to a member function set_rules() on null in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Complaint.php on line 25
+[22-Jul-2019 17:25:06 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/freelabn/public_html/keralafreelancer.tk/application/views/backend/admin/profile.php on line 207
+[23-Sep-2019 10:15:45 Asia/Kolkata] PHP Fatal error:  Call to undefined function decode() in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Installitem.php on line 37
+[23-Sep-2019 10:15:59 Asia/Kolkata] PHP Fatal error:  Cannot use object of type stdClass as array in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Installitem.php on line 41
+[23-Sep-2019 10:16:42 Asia/Kolkata] PHP Fatal error:  Cannot use object of type stdClass as array in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Installitem.php on line 41
+[23-Sep-2019 10:19:53 Asia/Kolkata] PHP Fatal error:  Cannot use object of type stdClass as array in /home/freelabn/public_html/keralafreelancer.tk/application/controllers/api/frontend/customer/Installitem.php on line 49

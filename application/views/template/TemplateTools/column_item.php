@@ -1,0 +1,1 @@
+<center><?=$icon?></center>
