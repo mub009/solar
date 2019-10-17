@@ -1,6 +1,6 @@
 <?php
 
-class Admin_Controller extends MY_Controller
+class Mahal_Controller extends MY_Controller
 {
 
     public $data = array();
@@ -24,26 +24,24 @@ class Admin_Controller extends MY_Controller
                 $this->data['userinfo'] =$this->Login_Modal->loginDetails($DataInfo['data']->userId);
 
          
-                if ($this->data['userinfo']['UserMasterId'] == 1 &&  $this->data['userinfo']['status']== 1) {
+                if ($this->data['userinfo']['UserMasterId'] == 2 &&  $this->data['userinfo']['status']== 1) {
 
                     $this->CurrentTimeAndDate($this->data['userinfo']['TimeZone']);
 
                  
-                    if ($this->data['userinfo']['is_OtpVerification'] == 0) {
+                    if ($this->data['userinfo']['is_OtpVerification'] == 2) {
 
                             redirect('common/otp');
 
                     } else {
 
-                        if ($this->data['userinfo']['is_OtpVerification'] == 1) {
-
-                            $this->_AdminPrivilegePermission();
-                        }
+                 
+                            $this->_MahalPrivilegePermission();
                     }
 
                 } else {
 
-                    $this->session->set_flashdata('Error', 'You not permit this Area');
+                    $this->session->set_flashdata('Error', 'Your not permit this Area');
 
                     redirect('common/login');
 
@@ -71,48 +69,28 @@ class Admin_Controller extends MY_Controller
         
         $this->r_notification();
 
-        $this->load->view('template/admin/_include/header', $this->data);
+        $this->load->view('template/mahal/_include/header', $this->data);
 
-        $this->load->view('template/admin/_include/header_menu');
+        $this->load->view('template/mahal/_include/header_menu');
 
-        $this->load->view('template/admin/_include/side_menubar', $data);
+        $this->load->view('template/mahal/_include/side_menubar', $data);
 
-        $this->load->view('template/admin/_include/modal');
+        $this->load->view('template/mahal/_include/modal');
 
-        $this->load->view('template/admin/_include/notification');
+        $this->load->view('template/mahal/_include/notification');
 
-        $this->load->view('backend/admin/' . $page, $data);
+        $this->load->view('backend/mahal/' . $page, $data);
 
-        $this->load->view('template/admin/_include/footer');
-
-    }
-
-    public function _AdminPrivilegeChecking($checking_name)
-    {
-
-        if (!$this->data['AdminPrivilege']) {
-            if (!in_array($checking_name, $this->data['CountryPrivilege'])) {
-                redirect('backend/admin/dashboard', 'refresh');
-            }
-        }
+        $this->load->view('template/mahal/_include/footer');
 
     }
-    public function _AdminPrivilegePermission()
-    {
 
-        $this->data['AdminPrivilege'] = true;
 
-        $AdminPrivilege = $this->Base_Model->select('tbl_usermaster', $data = '*', $where = array('id' => 1));
-        
-      
-        $this->data['MahalPrivilege'] = json_decode($AdminPrivilege['Permission']);
-
-    }
     public function _MahalPrivilegePermission()
     {
-        $this->data['AdminPrivilege'] = false;
 
-        $MahalPrivilege = $this->Base_Model->select('tbl_usermaster', $data = '*', $where = array('id' => 22));
+
+        $MahalPrivilege = $this->Base_Model->select('tbl_usermaster', $data = '*', $where = array('id' => 2));
 
         $this->data['MahalPrivilege'] = json_decode($MahalPrivilege['Permission']);
 

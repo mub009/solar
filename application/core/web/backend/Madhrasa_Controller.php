@@ -1,6 +1,6 @@
 <?php
 
-class Admin_Controller extends MY_Controller
+class Madhrasa_Controller extends MY_Controller
 {
 
     public $data = array();
@@ -24,7 +24,7 @@ class Admin_Controller extends MY_Controller
                 $this->data['userinfo'] =$this->Login_Modal->loginDetails($DataInfo['data']->userId);
 
          
-                if ($this->data['userinfo']['UserMasterId'] == 1 &&  $this->data['userinfo']['status']== 1) {
+                if ($this->data['userinfo']['UserMasterId'] == 3 &&  $this->data['userinfo']['status']== 1) {
 
                     $this->CurrentTimeAndDate($this->data['userinfo']['TimeZone']);
 
@@ -71,19 +71,19 @@ class Admin_Controller extends MY_Controller
         
         $this->r_notification();
 
-        $this->load->view('template/admin/_include/header', $this->data);
+        $this->load->view('template/madhrasa/_include/header', $this->data);
 
-        $this->load->view('template/admin/_include/header_menu');
+        $this->load->view('template/madhrasa/_include/header_menu');
 
-        $this->load->view('template/admin/_include/side_menubar', $data);
+        $this->load->view('template/madhrasa/_include/side_menubar', $data);
 
-        $this->load->view('template/admin/_include/modal');
+        $this->load->view('template/madhrasa/_include/modal');
 
-        $this->load->view('template/admin/_include/notification');
+        $this->load->view('template/madhrasa/_include/notification');
 
-        $this->load->view('backend/admin/' . $page, $data);
+        $this->load->view('backend/madhrasa/' . $page, $data);
 
-        $this->load->view('template/admin/_include/footer');
+        $this->load->view('template/madhrasa/_include/footer');
 
     }
 
