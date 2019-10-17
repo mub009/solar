@@ -77,15 +77,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $db['default'] = array(
     'dsn' => '',
      'hostname' => 'localhost',
-    //  'username' => 'freelabn_freelabn',
-    //  'password' => 'koJdPujC}lpQ',
-    //  'database' => 'freelabn_solar',
+     'username' => 'freelabn_freelabn',
+     'password' => 'koJdPujC}lpQ',
+     'database' => 'freelabn_solar',
 
     
     
-    'username' => 'root',
-    'password' => 'mubashir',
-    'database' => 'solar',
+    // 'username' => 'root',
+    // 'password' => 'mubashir',
+    // 'database' => 'solar',
 
     
     // 'username' => 'admin_deploy',
