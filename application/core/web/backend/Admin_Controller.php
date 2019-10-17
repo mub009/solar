@@ -19,31 +19,47 @@ class Admin_Controller extends MY_Controller
 
             $DataInfo = $this->authorization_token->ValidateToken($this->session->userdata('token'),$this->config->item('web_token_key'),$this->config->item('web_jwt_algorithm'));
 
+    
             if ($DataInfo['status'] == 1) {
 
-                $this->data['userinfo'] =$this->Login_Modal->loginDetails($DataInfo['data']->userId);
+                $LoginDetails=$this->Login_Modal->loginDetails($DataInfo['data']->userId);
+
 
          
-                if ($this->data['userinfo']['UserMasterId'] == 1 &&  $this->data['userinfo']['status']== 1) {
+                if (($LoginDetails['usermaster'] == 11 or $LoginDetails['usermaster'] == 88) && $LoginDetails['status'] == 1) {
 
-                    $this->CurrentTimeAndDate($this->data['userinfo']['TimeZone']);
 
-                 
-                    if ($this->data['userinfo']['is_OtpVerification'] == 0) {
+                    $this->data['user_id'] = $LoginDetails['user_id'];
 
-                            redirect('common/otp');
+                    $this->data['InsertBy'] = $LoginDetails['InsertBy'];
+
+                    $this->data['userinfo'] = $LoginDetails;
+
+                    if ($LoginDetails['OtpVerification'] == 2) {
+
+                        redirect('common/otp');
 
                     } else {
 
-                        if ($this->data['userinfo']['is_OtpVerification'] == 1) {
+                        if ($LoginDetails['usermaster'] == 11) {
 
-                            $this->_AdminPrivilegePermission();
+                            $this->data['AdminPrivilege'] = true;
+                            $this->_CountryPrivilegePermission();
+                            $this->_DealerPrivilegePermission();
+                            $this->_VendorPrivilegePermission();
+
+                        } elseif ($LoginDetails['usermaster'] == 88) {
+
+                            $this->data['AdminPrivilege'] = false;
+
+                            $this->_CountryPrivilegePermission();
+
                         }
                     }
 
                 } else {
 
-                    $this->session->set_flashdata('Error', 'You not permit this Area');
+                    $this->session->set_flashdata('Error', 'You not permit Area');
 
                     redirect('common/login');
 
@@ -64,11 +80,8 @@ class Admin_Controller extends MY_Controller
 
     public function template($page = null, $data = array())
     {
-
-        $this->data['change_profile'] = $this->Base_Model->select(self::tbl_mahal, '*', array('UserId' => $this->data['userinfo']['UserId']));
-       
-        $this->data['personal_info_updation'] = $this->Base_Model->select(self::tbl_mahal, '*', array('UserId' => $this->data['userinfo']['UserId']));
-        
+        $this->data['change_profile'] = $this->Base_Model->select(self::tbl_admin, '*', array('UserId' => $this->data['user_id']));
+        $this->data['personal_info_updation'] = $this->Base_Model->select(self::tbl_admin, '*', array('UserId' => $this->data['user_id']));
         $this->r_notification();
 
         $this->load->view('template/admin/_include/header', $this->data);
@@ -100,26 +113,34 @@ class Admin_Controller extends MY_Controller
     public function _AdminPrivilegePermission()
     {
 
-        $this->data['AdminPrivilege'] = true;
+        $AdminPrivilege = $this->Base_Model->select('tbl_usertypemaster', $data = '*', $where = array('UserTypeId' => 11));
 
-        $AdminPrivilege = $this->Base_Model->select('tbl_usermaster', $data = '*', $where = array('id' => 1));
-        
-      
-        $this->data['MahalPrivilege'] = json_decode($AdminPrivilege['Permission']);
+        $this->data['CountryPrivilege'] = json_decode($AdminPrivilege['permission']);
 
     }
-    public function _MahalPrivilegePermission()
+    public function _CountryPrivilegePermission()
     {
-        $this->data['AdminPrivilege'] = false;
 
-        $MahalPrivilege = $this->Base_Model->select('tbl_usermaster', $data = '*', $where = array('id' => 22));
+        $CountryPrivilege = $this->Base_Model->select('tbl_usertypemaster', $data = '*', $where = array('UserTypeId' => 88));
 
-        $this->data['MahalPrivilege'] = json_decode($MahalPrivilege['Permission']);
+        $this->data['CountryPrivilege'] = json_decode($CountryPrivilege['permission']);
 
     }
 
-   
+    public function _DealerPrivilegePermission()
+    {
 
-    
-   
+        $DealerPrivilege = $this->Base_Model->select('tbl_usertypemaster', $data = '*', $where = array('UserTypeId' => 22));
+
+        $this->data['DealerPrivilege'] = json_decode($DealerPrivilege['permission']);
+
+    }
+
+    public function _VendorPrivilegePermission()
+    {
+
+        $VendorPrivilege = $this->Base_Model->select('tbl_usertypemaster', $data = '*', $where = array('UserTypeId' => 44));
+
+        $this->data['VendorPrivilege'] = json_decode($VendorPrivilege['permission']);
+    }
 }

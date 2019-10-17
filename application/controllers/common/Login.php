@@ -102,7 +102,10 @@ class Login extends CI_Controller
                         $this->session->set_userdata(array('token' => $this->authorization_token->GenerateToken($logged_in_sess,$this->config->item('web_token_key'),$this->config->item('web_jwt_algorithm'))));
 
                         if ($email_exists['UserTypeId'] == 11) {
+
                             redirect('backend/admin/dashboard', 'refresh');
+
+
                         } elseif ($email_exists['UserTypeId'] == 22) {
 
                             redirect('backend/dealer/dashboard', 'refresh');
