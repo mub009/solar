@@ -87,7 +87,7 @@ class Complaint extends Admin_Controller
         $config=array(
             'datatable'=>array(
                 'json_url'=>'backend/admin/complaint/complaint/datatable/',
-                'column_name'=>array('Id','complaintDetails','Status','Action')
+                'column_name'=>array('Id','Customer','complaintDetails','Status','Action')
             ),
             'toolbar'=>array(
                 'privilege_array'=>array('admin'),
@@ -115,7 +115,8 @@ class Complaint extends Admin_Controller
     public function datatable()
     {
         $this->datatables
-        ->select('tbl_complaintMaster.Id as Id,tbl_complaintMaster.complaintDetails as complaintDetails,tbl_status.StatusValue,0 as Action,0 as Tracking')
+        ->select('tbl_complaintMaster.Id as Id,tbl_user_type.MobileNo,tbl_complaintMaster.complaintDetails as complaintDetails,tbl_status.StatusValue,0 as Action,0 as Tracking')
+        ->join('tbl_user_type', 'tbl_user_type.UserId=tbl_complaintMaster.CustomerUserTypeId')
         ->join('tbl_status', 'tbl_status.Id=tbl_complaintMaster.StatusId')
         ->from('tbl_complaintMaster');
         
