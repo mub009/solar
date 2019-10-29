@@ -75,6 +75,10 @@ class Modal extends Admin_Controller
         $this->data['customerview'] = $this->Base_Model->select('tbl_customer', '*', $where = array('UserId' => $id), $order_desc = null, $order_asc = null, $limit = null, $start = null, $return = 'row_array');
     
    
+        print_r($this->data['customerview']);
+
+        die();
+
         $this->load->view('backend/admin/user/admin/Modal/customerview', $this->data);
 
     }

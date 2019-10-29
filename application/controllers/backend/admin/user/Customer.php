@@ -136,6 +136,8 @@ class Customer extends Admin_Controller
         
         ->join('tbl_status', 'tbl_status.Id=tbl_user_type.StatusId')
 
+        ->join('tbl_customer', 'tbl_customer.UserId=tbl_user_type.UserId')
+
         ->join('tbl_status as tbl_otpStatus', 'tbl_otpStatus.Id=tbl_user_type.OtpVerification')
 
         ->where(array('tbl_user_type.UserTypeId' => 33, 'tbl_user_type.StatusId !=' => 3))
@@ -233,8 +235,11 @@ class Customer extends Admin_Controller
     public function customerview($id)
     {
         
-        $this->data['customerview'] = $this->Base_Model->select('tbl_customer', '*', $where = array('Id' => $id), $order_desc = null, $order_asc = null, $limit = null, $start = null, $return = 'row_array');
+        $this->data['customerview'] = $this->Base_Model->select('tbl_customer', '*', $where = array('UserId' => $id), $order_desc = null, $order_asc = null, $limit = null, $start = null, $return = 'row_array');
     
+
+        $this->data['intall'] = $this->Base_Model->select('tbl_installdetails', '*', $where = array('CustomerUserTypeId' => $id), $order_desc = null, $order_asc = null, $limit = null, $start = null, $return = 'result_array');
+
    
         $this->load->view('backend/admin/user/admin/Modal/customerview', $this->data);
 

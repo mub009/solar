@@ -37,16 +37,8 @@
 
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-5" style=" text-align:center;">Email</label>
-                                        <div class="col-md-7">
-
-                                            <div id="intrest"><?=$customerview['Email']?></div>
 
 
-                                        </div>
-                                    </div>
-                                   
                                     <!-- <div class="form-group">
                                         <label class="control-label col-md-5" style=" text-align:center;">isTaxInclude</label>
                                         <div class="col-md-7">
@@ -66,7 +58,65 @@
                                         </div>
                                     </div>
                                    
-                                        
+
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" style=" text-align:center;">Grid Type</label>
+                                        <div class="col-md-7">
+
+                                            <div id="intrest"><?=$customerview['is_grid']?> </div>
+
+
+                                        </div>
+                                    </div>
+                                   
+
+
+
+<?php
+
+if(!empty($intall))
+{
+?>
+                                   
+                                    <div class="form-group">
+
+                                      <div class="row">
+
+                                        <div class="col-md-6">Item Name</div>
+
+                                        <div class="col-md-4">No of Item</div>
+
+                                        <div class="col-md-2">Watts</div>
+
+                                        <?php
+
+foreach ($intall as $row) {
+
+?>
+
+<div class='col-md-6'><?=$row['itemName']?></div>
+
+<div class="col-md-4"><?=$row['NoofItem']?></div>
+
+<div class="col-md-2"><?=$row['watts']?></div>
+
+
+
+<?php 
+    # code...
+}
+
+?>
+
+
+                                        </div>
+                                    </div>
+                                   
+ <?php
+ 
+}
+ ?>
                                         
                                     
                                    
